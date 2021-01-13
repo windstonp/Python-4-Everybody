@@ -1,8 +1,6 @@
 def computePayment(hour, rate) :
     if hour > 40 :
-        reg = hour * rate
-        otp = (hour - 40.0) * (rate * 0.5)
-        pay = reg * otp
+        pay = 40 * rate + (hour - 40) * rate * 1.5
     else : 
         pay = hour * rate
     return pay
